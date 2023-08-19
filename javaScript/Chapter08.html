@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //배열에서 사용하는 내장함수
+        var li = ['c','e','a','b','d'];
+        //push = 데이터 하나를 추가할때
+        //li.push('f');
+        
+        //concat = 데이터를 배열로 추가할때 
+        //li = li.concat('f','g');
+        
+        //unshift = 배열의 시작 지점에 추가하기 
+        //li.unshift('z');
+
+        //splice = 배열의 중간 원하는 곳에 데이터 입력하기
+        //인덱스,삭제할데이터갯수, 추가할 데이터/ 두번째를0으로하면 아무것도 삭제안하고 앞에 추가
+        //li.splice(1,0,'d','x');
+        
+        //shift = 맨앞의 데이터는 삭제 
+        //li.shift();
+
+        //pop() = 맨 뒤에 데이터 하나 삭제 
+        //li.pop();
+        
+        //sort() = 배열을 정렬할때 사용 
+        //li.sort();
+
+        //reverse() = 배열을 반대로 정렬할 때 사용
+        li.reverse();
+        document.write(li);
+    </script>
+</body>
+</html>

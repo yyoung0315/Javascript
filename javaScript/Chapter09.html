@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    <script>
+        // 객체 Object
+        // 키 밸류
+        // const grades = {'egoing': 10,'k8805': 6,'sorialgi':8};
+        // 객체를 사용하는 방법은 grades. 키값을 입력하면 출력은 value 값인 6이 출력 됨 
+        
+        // //객체와 반복문 
+        // for(var key in grades){
+        //     document.write("<li>Key : "+ key+" value : " + grades[key]+"</li>");
+        // }
+
+    var grades = {
+        //grades 객체 안에는 list , show라는 객체를 가지고 있고
+    'list': {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+    //show 라는 키값 안에는 함수가 존재 
+    'show' : function(){
+        for(var name in this.list){
+            //show안에서 본인이 속한 객체 속의 다른 데이터를 사용할때는 this를 써야함 
+            document.write(name+':'+this.list[name]+"<br />");
+        }
+    }
+};
+    // 객체안에 함수이기 때문에 grades. 을 써서 실행 시켜야함
+    grades.show();
+    
+    </script>
+    </ul>
+</body>
+</html>
