@@ -7,6 +7,25 @@
     <script></script>
 </head>
 <body>
-    
+    <script>
+        //정규 표현식 = 추출, test , 치환 
+        //var pattern = /a/;   //정규표현식 생성 방법 1
+        //var pattern = new RegExp('a'); //정규표현식 생성 방법 2
+
+
+
+        //var pattern = /a./;  // .을 찍으면 문자를 하나더 추출
+         //exec = 정규표현식 실행 
+        //document.write(pattern.exec('abcde'));
+
+        //만약에 리턴값이 없으면 null을 표현함 
+        //document.write(pattern.tset('abcde')); //boolean으로 표현됨
+
+        //문자열에서 정규표현식 사용하기 
+        var pattern = /a/; 
+        var str = 'bcdef';
+        //document.write(str.match(pattern));
+        document.write(str.replace(pattern,'A'));
+    </script>
 </body>
 </html>
