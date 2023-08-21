@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //만약 전역 변수를 하기 싫다면 전체를 function 으로 감싸주면 됨 
+        //전역 변수. 얘는 객체를 가지고 있음 
+        var MYAPP = {}
+        // MYAPP 안에 calculator , coordinate 변수가 있고 변수들또한 객체를 가지고 있음
+        MYAPP.calculator = {
+            'left' : null,
+            'right' : null
+        }
+        MYAPP.coordinate = {
+            'left' : null,
+            'right' : null
+        }
+        
+        // calculator 변수의 left객체에 값을 지정 
+        MYAPP.calculator.left = 10;
+        MYAPP.calculator.right = 20;
+
+        // 함수를 하나더 사용해서 + 해줌 
+        function sum(){
+            return MYAPP.calculator.left + MYAPP.calculator.right;
+        }
+
+        // sum함수를 실행 
+        document.write(sum());
+    </script>
+</body>
+</html>

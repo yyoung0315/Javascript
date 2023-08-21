@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //함수는 값이고 그렇기 때문에 함수는 객체 안에 정의 될 수있다.
+        //예시 b : function(){}  이렇게 사용 가능. 이렇게 속성안에 함수가 정의가 되면 메소드라고 함 
+        
+        
+        //꼭 알아둘것은 매개변수가 함수가 될수있고 호출할수도있음  
+        function cal(func, num) {
+            return func(num)  //이렇게 func는 함수를 호출할수있음 
+        }
+        function increase(num) {
+            return num+1
+        }
+        function decrease(num) {
+            return num-1
+        }
+
+        alert(cal(increase,1)); // 이렇게 호출하면 increase 여기에 파라미터에 1을 주면서 호출 가능함 
+        alert(cal(decrease,1));
+    </script>
+</body>
+</html>
