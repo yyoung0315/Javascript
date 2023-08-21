@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    첫번째 수 :  <input type="text" id="a1"><br>
+    두번째 수 :  <input type="text" id="a2">
+    <input type="button" value="더하기" onclick="myFunction()">
+
+</body>
+<script>
+    function myFunction(a,b) {
+        const a1 = document.getElementById("a1").value;
+        const a2 = document.getElementById("a2").value;
+        const plus = Number(a1) + Number(a2)  // 숫자로 변환
+
+        
+        const subtraction = Number(a1) - Number(a2) 
+        const multiplication = Number(a1) * Number(a2) 
+        const division = Math.round(Number(a1) / Number(a2)) 
+
+        document.write(plus +"<br>")  ;
+        document.write(subtraction+"<br>");
+        document.write(multiplication+"<br>");
+        document.write(division+"<br>");
+
+    }
+    
+
+    //조지노 답안
+    // const a = document.querySelector(".a");
+    // const b = document.querySelector(".b");
+    // const ab = document.querySelector(".ab");
+    // ab.addEventListener("click",()=>{
+    //     alert(parseInt(a.value)+parseInt(b.value));
+    // })
+    
+</script>
+</html>

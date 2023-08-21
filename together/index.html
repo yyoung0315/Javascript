@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function funK1() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript";
+            f1.demo2.value= "Hello JavaScript2"; // name을 값 받아서 버튼 클릭시 글자가 입력 됨 
+            document.getElementById("demo3").value ="Hello JavaScript3";  // id 값을 받아서 버튼 클릭시 글자가 입력 됨 
+        }
+        
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <input type="text" id="demo2" name="demo2"><br>
+        <input type="text" id="demo3" name="demo3s">
+        <input type="button" onclick="funK1()" value="버튼">
+    </form>
+
+    <p id="demo">
+
+        DEMO TEST
+    </p>
+</body>
+</html>

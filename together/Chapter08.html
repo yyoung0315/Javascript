@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function funcK() {
+            const man = {firstname:"kim" , lastname:"YoonYoung"};
+            document.write(man.firstname);
+            document.write(man.lastname);
+
+            //prop = 속성 man[prop] 속성의 키값
+            for(prop in man){
+                document.write("<br><br>"+man[prop] + "<br>");
+            }
+        }
+        funcK();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

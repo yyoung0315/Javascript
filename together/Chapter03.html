@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1">
+
+    </form>
+
+</body>
+
+
+<script> 
+//scope (영역)
+var a = 200;
+function hello() {  //funtion 안에서 선언한 변수 값은 지역 변수로 정의 
+    var a = 100;
+    console.log(a); 
+}
+
+hello();   // 100
+ 
+console.log(a);  // 200
+
+//var = funcion 안에 없으면 다 전역으로 처리됨, var는 재할당 가능 
+    // var은 아래가 가능함 
+    //var a = 100; 
+    //var a = 300; 
+
+    //let은 지역 전역을 나눠서 재할당 가능 
+    // let a = 100; 
+    // a = 200;  // 이렇게 하면 let은 값 변경가능 200이 출력됨 
+    // if(a == 100){
+    //     let a = 200;
+    //     console.log(a);
+    // }
+    // console.log(a);
+
+//const = 무조건 초기값이 존재해야함.
+// const a = 100;  
+//     a = 200;  // 상수이기 때문에 값변경 불가. 오류 남 
+
+</script>
+
+</html>

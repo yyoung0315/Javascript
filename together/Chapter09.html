@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function funcK() {
+            //배열 찍기
+            const cars = ["k5","Volvo","BMW"];
+            document.write(cars[0]+", "+cars[1]+", "+cars[2]+"<br><br>");
+
+            //배열 찍기2
+            for (let i = 0; i <=cars.length-1; i++) {
+                document.write(cars[i] + " "  );
+            }
+
+            //배열 찍기3
+            cars.map((car)=>{
+            document.writeln(car);
+            })
+
+
+            
+            //방법 4
+            cars.forEach((car)=>{document.writeln(car)})
+        }
+
+
+        funcK();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

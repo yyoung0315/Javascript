@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1">
+        이름1 : <input type="text" name="n1" id="n1" /> <br>
+        이름2 : <input type="text" name="n2" id="n2" /> <br>
+        이름3 : <input type="text" name="n3" id="n3" /> <br>
+        <input type="button" onclick="funK1()" value="확인" >
+    </form>
+</body>
+
+
+<script> 
+// 값을 가져오는 3가지 방법
+    function funK1() {
+
+        const n1 = document.getElementById("n1").value;
+        alert(" 확인n1 "+n1);
+
+        const n2 = document.getElementsByName("n2")[0].value;
+        alert(" 확인n2 "+n2); // 잘안씀 
+
+        const n3 = f1.n3.value;
+        alert(" 확인n3 "+n3);
+    }
+
+    
+</script>
+
+</html>

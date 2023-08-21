@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+    <script>
+        const car = {type:"Fiat", model:"500", color:"white"};
+        car.color = "red";
+        car.owner = "Johnson";
+        // prop = 정해진 명령문임 , 변수이름 아님 
+        for ( prop in car) {
+            document.write(prop + " : " + car[prop] + "<br>");
+        }
+        document.write("<hr>");
+
+        for (let i = 0; i < Object.keys(car).length; i++) {
+            document.write(Object.keys(car)[i] + " : " + Object.values(car)[i])    
+        }
+    </script>
+</html>

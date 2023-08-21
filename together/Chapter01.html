@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./JS/main.js"></script>  <!--스크립트 외부에서 사용하기-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" >이미지를 출력합니다. </p>
+    <img src="./img/img.jpg" width="100" height="100" id="mainimg">
+
+    <form name="f1">
+        <input type="button" onclick="funK1()" value="둘리" >
+        <input type="button" onclick="funK2()" value="미녀와야수">
+        <input type="button" onclick="funK3()" value="내부경고창">
+    </form>
+</body>
+
+
+<script> 
+    function funK3() {
+        alert(" 내부경고 스크립트 확인  ");
+    }
+</script>
+
+</html>
